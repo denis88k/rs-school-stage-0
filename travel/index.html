@@ -5,34 +5,78 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Travel</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap"
+      rel="stylesheet">
    <link rel="stylesheet" href="style/style.min.css">
 </head>
 
 <body>
    <div class="wrapper">
-      <div class="top-block">
-         <header class="header">
-
-         </header>
-         <section class="preview">
-
-
-            <h1 class="preview__title">
-
-            </h1>
-            <p class="preview__subtitle">
-
-            </p>
-            <div class="preivew__input-block">
-               <input type="text" class="preview__input">
-            </div>
-         </section>
+      <div class="block-top">
+         <div class="container">
+            <header class="header">
+               <a class="header__logo" href="#">
+                  <svg class="logo" width="30" height="30">
+                     <use href="img/icons/logo.svg"></use>
+                  </svg>
+                  <h3 class="header__title">Travel Portal</h3>
+               </a>
+               <nav class="nav">
+                  <ul class="nav__links">
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">How It Works</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Plan Your Trip</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Destinations</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Travel Stories</a>
+                     </li>
+                     <li class="nav__item nav__item-mobile">
+                        <a class="nav__link" href="#">Account</a>
+                     </li>
+                     <li class="nav__item nav__item-mobile">
+                        <a class="nav__link" href="#">Social Media</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="menu__btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+               <button class="header__btn">login</button>
+               <div class="pop-up">
+                  <div class="pop-up__inner"></div>
+               </div>
+            </header>
+            <section class="preview">
+               <h1 class="preview__title">
+                  Explore the beauty of the World
+               </h1>
+               <p class="preview__subtitle">
+                  Receive personalized recommendations for countries, hotels, activities and more
+               </p>
+               <lebel class="preivew__input-block">
+                  <input class="preview__input" type="search" placeholder="What would you like to do?">
+                  <button class="preview__input-btn">
+                     Start Planning
+                  </button>
+               </lebel>
+            </section>
+         </div>
       </div>
       <main class="main">
          <section class="steps"></section>
          <section class="destinations"></section>
       </main>
-      <div class="bottom-block">
+      <div class="block-bottom">
          <section class="stories">
             <h3 class="stories__title"></h3>
          </section>
