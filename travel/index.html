@@ -94,8 +94,7 @@
                   </div>
                </div>
             </header>
-
-            <section class="preview">
+            <section class="preview" id="preview">
                <div class="container">
                   <div class="preview__inner">
                      <h1 class="preview__title">
@@ -104,40 +103,213 @@
                      <p class="preview__subtitle">
                         Receive personalized recommendations for countries, hotels, activities and more
                      </p>
-                     <label class="preivew__input-block">
+                     <div class="preivew__input-block">
                         <input class="preview__input" type="search" placeholder="What would you like to do?">
-                        <button class="preview__input-btn">
+                        <button class="preview__input-btn btn">
                            Start Planning
                         </button>
-                     </label>
+                     </div>
                   </div>
                </div>
             </section>
          </div>
       </div>
-   </div>
-   <main class="main">
-      <section class="steps">
-         <div class="steps__inner">
-            <h2 class="steps__title">3 STEPS TO THE PERFECT TRIP</h2>
-         </div>
-      </section>
-      <section class="destin">
-         <div class="destin__inner">
-            <h2 class="destin__title">
-               POPULAR DESTINATIONS
-            </h2>
-         </div>
-      </section>
-   </main>
-   <div class="block-bottom">
-      <section class="stories">
-         <h2 class="stories__title"></h2>
-      </section>
-      <footer class="footer">
-
-      </footer>
-   </div>
+      <main class="main">
+         <section class="steps">
+            <div class="container">
+               <div class="steps__inner">
+                  <h2 class="steps__title title">3 STEPS TO THE PERFECT TRIP</h2>
+                  <div class="steps__items">
+                     <div class="steps__item">
+                        <div class="steps__img">
+                           <img src="img/icons/steps1.svg">
+                        </div>
+                        <p class="steps__item-text">
+                           Tell us what you want to do
+                        </p>
+                     </div>
+                     <div class="steps__item">
+                        <div class="steps__img">
+                           <img src="img/icons/steps2.svg">
+                        </div>
+                        <p class="steps__item-text">
+                           Share us preferable dates
+                        </p>
+                     </div>
+                     <div class="steps__item">
+                        <div class="steps__img">
+                           <img src="img/icons/steps3.svg">
+                        </div>
+                        <p class="steps__item-text">
+                           We will give you recommendations
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="destin" id="destin">
+            <div class="destin__inner">
+               <h2 class="destin__title title">POPULAR DESTINATIONS</h2>
+               <div class="slider">
+                  <div class="slider-wrapper">
+                     <div class="slider-slide">
+                        <picture>
+                           <source media="(max-width: 390px)" srcset="img/slider/slide1-m.jpg">
+                           <source media="(min-width: 391px)" srcset="img/slider/slide1.jpg">
+                           <img src="img/slider/slide1.jpg" alt="steps1">
+                        </picture>
+                     </div>
+                     <div class="slider-slide">
+                        <picture>
+                           <source media="(max-width: 390px)" srcset="img/slider/slide2-m.jpg">
+                           <source media="(min-width: 391px)" srcset="img/slider/slide2.jpg">
+                           <img src="img/slider/slide2.jpg" alt="steps2">
+                        </picture>
+                     </div>
+                     <div class="slider-slide">
+                        <picture>
+                           <source media="(max-width: 390px)" srcset="img/slider/slide3-m.jpg">
+                           <source media="(min-width: 391px)" srcset="img/slider/slide3.jpg">
+                           <img src="img/slider/slide3.jpg" alt="steps3">
+                        </picture>
+                     </div>
+                  </div>
+                  <div class="slider-dots">
+                     <div class="slider-dot"></div>
+                  </div>
+               </div>
+               <button class="more-btn btn">
+                  <img src="img/icons/arrow-right.svg">
+                  <p>Find More</p>
+               </button>
+            </div>
+         </section>
+      </main>
+      <div class="block-bottom">
+         <section class="stories" id="stories">
+            <div class="container">
+               <div class="stories__inner">
+                  <h2 class="stories__title title">TRAVEL STORIES</h2>
+                  <div class="stories__items">
+                     <div class="stories__item">
+                        <div class="stories__img">
+                           <picture>
+                              <source media="(max-width: 390px)" srcset="img/slider/stories1-m.jpg">
+                              <source media="(min-width: 391px)" srcset="img/stories/stories1.jpg">
+                              <img src="img/stories/stories1.jpg" alt="stories1">
+                           </picture>
+                        </div>
+                        <div class="stories__text">
+                           <div class="stories__text-title">
+                              10 Photos of Attractive Thailand
+                           </div>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                              ut
+                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                              cupidatat
+                              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+                              dolor
+                              sit amet, consectetur adipiscing elit...
+                           </p>
+                           <a href="#">Read More</a>
+                        </div>
+                     </div>
+                     <div class="stories__item">
+                        <div class="stories__img">
+                           <picture>
+                              <source media="(max-width: 390px)" srcset="img/slider/stories2-m.jpg">
+                              <source media="(min-width: 391px)" srcset="img/stories/stories2.jpg">
+                              <img src="img/stories/stories2.jpg" alt="stories2">
+                           </picture>
+                        </div>
+                        <div class="stories__text">
+                           <div class="stories__text-title">
+                              Canyonlands National Park, Utah
+                           </div>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                              ut
+                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                              cupidatat
+                              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+                              dolor
+                              sit amet, consectetur adipiscing elit...
+                           </p>
+                           <a href="#">Read More</a>
+                        </div>
+                     </div>
+                     <div class="stories__item">
+                        <div class="stories__img">
+                           <picture>
+                              <source media="(max-width: 390px)" srcset="img/slider/stories3-m.jpg">
+                              <source media="(min-width: 391px)" srcset="img/stories/stories3.jpg">
+                              <img src="img/stories/stories3.jpg" alt="stories3">
+                           </picture>
+                        </div>
+                        <div class="stories__text">
+                           <div class="stories__text-title">
+                              I left my heart in the Mountains!
+                           </div>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                              ut
+                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                              cupidatat
+                              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+                              dolor
+                              sit amet, consectetur adipiscing elit...
+                           </p>
+                           <a href="#">Read More</a>
+                        </div>
+                     </div>
+                     <div class="stories__item">
+                        <div class="stories__img">
+                           <picture>
+                              <source media="(max-width: 390px)" srcset="img/slider/stories4-m.jpg">
+                              <source media="(min-width: 391px)" srcset="img/stories/stories4.jpg">
+                              <img src="img/stories/stories4.jpg" alt="stories4">
+                           </picture>
+                        </div>
+                        <div class="stories__text">
+                           <div class="stories__text-title">
+                              The Longest journey in my life!
+                           </div>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                              ut
+                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                              cupidatat
+                              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+                              dolor
+                              sit amet, consectetur adipiscing elit...
+                           </p>
+                           <a href="#">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="more-btn btn">
+                     <img src="img/icons/arrow-right.svg">
+                     <p>See More</p>
+                  </button>
+               </div>
+            </div>
+         </section>
+         <footer class="footer">
+            <div class="container">
+               <div class="footer__inner">
+                  <p class="footer__reserved">
+                     All Rights Reserved © Travel Portal
+                  </p>
+               </div>
+            </div>
+         </footer>
+      </div>
    </div>
    <script src="js/main.js"></script>
 </body>
