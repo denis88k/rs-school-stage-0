@@ -27,22 +27,22 @@
                      <nav class="nav">
                         <ul class="nav__links">
                            <li class="nav__item">
-                              <a class="nav__link" href="#">How It Works</a>
+                              <a class="nav__link" href="#preview">How It Works</a>
                            </li>
                            <li class="nav__item">
-                              <a class="nav__link" href="#">Plan Your Trip</a>
+                              <a class="nav__link" href="#steps">Plan Your Trip</a>
                            </li>
                            <li class="nav__item">
-                              <a class="nav__link" href="#">Destinations</a>
+                              <a class="nav__link" href="#destin">Destinations</a>
                            </li>
                            <li class="nav__item">
-                              <a class="nav__link" href="#">Travel Stories</a>
+                              <a class="nav__link" href="#stories">Travel Stories</a>
                            </li>
-                           <li class="nav__item nav__item-mobile">
+                           <li class="nav__item nav__item-mobile btn-login">
                               <a class="nav__link" href="#">Account</a>
                            </li>
                            <li class="nav__item nav__item-mobile">
-                              <a class="nav__link" href="#">Social Media</a>
+                              <a class="nav__link" href="#footer">Social Media</a>
                            </li>
                         </ul>
                      </nav>
@@ -51,7 +51,7 @@
                         <span></span>
                         <span></span>
                      </div>
-                     <button class="login-btn">Login</button>
+                     <button class="login-btn btn-login">Login</button>
                      <div class="pop-up">
                         <div class="pop-up__inner">
                            <form class="form" action="#">
@@ -115,7 +115,7 @@
          </div>
       </div>
       <main class="main">
-         <section class="steps">
+         <section class="steps" id="steps">
             <div class="container">
                <div class="steps__inner">
                   <h2 class="steps__title title">3 STEPS TO THE PERFECT TRIP</h2>
@@ -152,32 +152,39 @@
             <div class="destin__inner">
                <h2 class="destin__title title">POPULAR DESTINATIONS</h2>
                <div class="slider">
-                  <div class="slider-wrapper">
-                     <div class="slider-slide">
-                        <picture>
-                           <source media="(max-width: 390px)" srcset="img/slider/slide1-m.jpg">
-                           <source media="(min-width: 391px)" srcset="img/slider/slide1.jpg">
-                           <img src="img/slider/slide1.jpg" alt="steps1">
-                        </picture>
-                     </div>
-                     <div class="slider-slide">
-                        <picture>
-                           <source media="(max-width: 390px)" srcset="img/slider/slide2-m.jpg">
-                           <source media="(min-width: 391px)" srcset="img/slider/slide2.jpg">
-                           <img src="img/slider/slide2.jpg" alt="steps2">
-                        </picture>
-                     </div>
-                     <div class="slider-slide">
-                        <picture>
-                           <source media="(max-width: 390px)" srcset="img/slider/slide3-m.jpg">
-                           <source media="(min-width: 391px)" srcset="img/slider/slide3.jpg">
-                           <img src="img/slider/slide3.jpg" alt="steps3">
-                        </picture>
+                  <div class="slider-container">
+                     <div class="slider-track">
+                        <div class="slider-item">
+                           <picture>
+                              <source media="(max-width: 390px)" srcset="img/slider/slide1-m.jpg">
+                              <source media="(min-width: 391px)" srcset="img/slider/slide1.jpg">
+                              <img src="img/slider/slide1.jpg" alt="steps1">
+                           </picture>
+                           <p class="slider__text">SPAIN</p>
+                        </div>
+                        <div class="slider-item">
+                           <picture>
+                              <source media="(max-width: 390px)" srcset="img/slider/slide2-m.jpg">
+                              <source media="(min-width: 391px)" srcset="img/slider/slide2.jpg">
+                              <img src="img/slider/slide2.jpg" alt="steps2">
+                           </picture>
+                           <p class="slider__text">JAPAN</p>
+                        </div>
+                        <div class="slider-item">
+                           <picture>
+                              <source media="(max-width: 390px)" srcset="img/slider/slide3-m.jpg">
+                              <source media="(min-width: 391px)" srcset="img/slider/slide3.jpg">
+                              <img src="img/slider/slide3.jpg" alt="steps3">
+                           </picture>
+                           <p class="slider__text">USA</p>
+                        </div>
                      </div>
                   </div>
-                  <div class="slider-dots">
-                     <div class="slider-dot"></div>
+                  <div class="slider-btn">
+                     <div class="btn-prev"></div>
+                     <div class="btn-next"></div>
                   </div>
+                  <div class="slider-dots"></div>
                </div>
                <button class="more-btn btn">
                   <img src="img/icons/arrow-right.svg">
@@ -195,7 +202,7 @@
                      <div class="stories__item">
                         <div class="stories__img">
                            <picture>
-                              <source media="(max-width: 390px)" srcset="img/slider/stories1-m.jpg">
+                              <source media="(max-width: 390px)" srcset="img/stories/stories1-m.jpg">
                               <source media="(min-width: 391px)" srcset="img/stories/stories1.jpg">
                               <img src="img/stories/stories1.jpg" alt="stories1">
                            </picture>
@@ -220,7 +227,7 @@
                      <div class="stories__item">
                         <div class="stories__img">
                            <picture>
-                              <source media="(max-width: 390px)" srcset="img/slider/stories2-m.jpg">
+                              <source media="(max-width: 390px)" srcset="img/stories/stories2-m.jpg">
                               <source media="(min-width: 391px)" srcset="img/stories/stories2.jpg">
                               <img src="img/stories/stories2.jpg" alt="stories2">
                            </picture>
@@ -245,7 +252,7 @@
                      <div class="stories__item">
                         <div class="stories__img">
                            <picture>
-                              <source media="(max-width: 390px)" srcset="img/slider/stories3-m.jpg">
+                              <source media="(max-width: 390px)" srcset="img/stories/stories3-m.jpg">
                               <source media="(min-width: 391px)" srcset="img/stories/stories3.jpg">
                               <img src="img/stories/stories3.jpg" alt="stories3">
                            </picture>
@@ -270,7 +277,7 @@
                      <div class="stories__item">
                         <div class="stories__img">
                            <picture>
-                              <source media="(max-width: 390px)" srcset="img/slider/stories4-m.jpg">
+                              <source media="(max-width: 390px)" srcset="img/stories/stories4-m.jpg">
                               <source media="(min-width: 391px)" srcset="img/stories/stories4.jpg">
                               <img src="img/stories/stories4.jpg" alt="stories4">
                            </picture>
@@ -300,12 +307,18 @@
                </div>
             </div>
          </section>
-         <footer class="footer">
+         <footer class="footer" id="footer">
             <div class="container">
                <div class="footer__inner">
+                  <a class="git" href="https://github.com/denis88k">
+                     <img src="img/icons/git.svg" alt="Github">
+                  </a>
                   <p class="footer__reserved">
                      All Rights Reserved © Travel Portal
                   </p>
+                  <a class="RSS" href="https://rs.school/js/">
+                     <img src="img/icons/rss.svg" alt="RS School">
+                  </a>
                </div>
             </div>
          </footer>
