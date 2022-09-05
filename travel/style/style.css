@@ -230,7 +230,7 @@ body.lock {
 }
 
 .pop-up {
-   position: relative;
+   position: absolute;
    z-index: -1;
    top: 0;
    left: 0;
@@ -298,6 +298,9 @@ body.lock {
 
 .form__btn-account:hover {
    transform: scale(1.05);
+}
+.form__btn-account img{
+   margin-right: 10px;
 }
 
 .btn-account-fb {
@@ -897,8 +900,8 @@ body.lock {
    margin-right: auto;
 }
 
-.more-btn p {
-   margin-left: 10px;
+.more-btn img {
+   margin-right: 10px;
 }
 
 @media screen and (max-width: 320px) {
