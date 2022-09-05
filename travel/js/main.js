@@ -10,7 +10,6 @@ loginBtn.forEach(el => {
       nav.classList.remove('nav-active');
       navLinks.classList.remove('nav__links-active');
       wrapper.classList.remove('menu-active');
-      console.log('loginBtn')
    });
 });
 
@@ -18,8 +17,7 @@ popUpInner.addEventListener('click', (e) => {
    if (e.target === popUpInner) {
       popUp.classList.remove('pop-up-active');
       document.body.classList.remove('lock');
-   }
-   console.log('popUpInner')
+   };
 });
 
 const btnRegister = document.querySelector('.form__btn-register');
@@ -55,19 +53,16 @@ btn.addEventListener('click', () => {
    navLinks.classList.toggle('nav__links-active');
    document.body.classList.toggle('lock');
    wrapper.classList.toggle('menu-active');
-   console.log('btn')
 });
 
 nav.addEventListener('click', (e) => {
-   console.log(e.target)
-   if (e.target.parentNode.classList.contains('nav')) {
+   if (!e.target.parentNode.classList.contains('nav__links')) {
+      document.body.classList.remove('lock');
       btn.classList.remove('menu__btn-active');
       nav.classList.remove('nav-active');
       navLinks.classList.remove('nav__links-active');
-      document.body.classList.remove('lock');
       wrapper.classList.remove('menu-active');
-      console.log('nav')
-   }
+   };
 });
 
 //слайдер - крутилка - вертелка - карусель
